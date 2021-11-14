@@ -41,5 +41,5 @@
     "dbg_zcl": "int?",
     "dbg_zdp": "int?"
   },
-  "image": "homeassistant/{arch}-addon-deconz"
+  "image": "wovka88/{arch}-addon-deconz-beta"
 }
