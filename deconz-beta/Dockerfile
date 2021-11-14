@@ -65,12 +65,12 @@ RUN \
     set -x \
     && if [ "${BUILD_ARCH}" = "armhf" ]; \
         then \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/raspbian/${DECONZ_CHANNEL}/deconz-${DECONZ_VERSION}-qt5.deb; \
+            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/raspbian/beta/deconz-${DECONZ_VERSION}-qt5.deb; \
         elif [ "${BUILD_ARCH}" = "aarch64" ]; \
         then \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/debian/${DECONZ_CHANNEL}/deconz_${DECONZ_VERSION}-debian-buster-beta_arm64.deb; \
+            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/debian/beta/deconz_${DECONZ_VERSION}-debian-buster-beta_arm64.deb; \
         else \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/ubuntu/${DECONZ_CHANNEL}/deconz-${DECONZ_VERSION}-qt5.deb; \
+            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/ubuntu/beta/deconz-${DECONZ_VERSION}-qt5.deb; \
         fi \
     && dpkg --force-all -i /deconz.deb \
     && rm -f /deconz.deb \
