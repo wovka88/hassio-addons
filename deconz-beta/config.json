@@ -41,5 +41,5 @@
     "dbg_zcl": "int?",
     "dbg_zdp": "int?"
   },
-  "image": "wovka88/{arch}-addon-deconz-beta"
+  "image": "ghcr.io/wovka88/{arch}-addon-deconz-beta"
 }
