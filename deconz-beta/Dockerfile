@@ -22,6 +22,9 @@ RUN \
         libqt5sql5 \
         libqt5websockets5 \
         libqt5widgets5 \
+        libqt5qml5 \
+        qtdeclarative5-dev \
+        libssl1.1 \
         lsof \
         netcat \
         nginx \
