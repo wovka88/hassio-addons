@@ -1,6 +1,6 @@
 {
   "name": "deCONZ-beta",
-  "version": "2021.11.1",
+  "version": "v2.13.3-r1",
   "slug": "deconz",
   "description": "Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik",
   "arch": ["amd64", "armhf", "aarch64"],
