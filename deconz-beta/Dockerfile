@@ -76,7 +76,7 @@ RUN \
         else \
             curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/ubuntu/beta/deconz-${DECONZ_VERSION}-qt5.deb; \
         fi \
-    && dpkg --force-all -i /deconz.deb \
+    && dpkg -i /deconz.deb \
     && rm -f /deconz.deb \
     && chown root:root /usr/bin/deCONZ* \
     && sed -i 's/\/root/\/data/' /etc/passwd
