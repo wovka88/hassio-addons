@@ -1,9 +1,5 @@
 # Changelog
 
-## v2.13.4-r2
-
-- Update to Debian bullseye
-
 ## v2.13.4-r1
 
 - Bump deCONZ to v2.13.4
