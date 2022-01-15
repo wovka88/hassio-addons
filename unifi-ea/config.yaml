@@ -2,6 +2,7 @@
 name: UniFi Network Application (EA)
 version: 7.0.18-r0
 slug: unifi
+image: ghcr.io/wovka88/{arch}-addon-unifi
 description: Manage your UniFi network using a web browser
 url: https://github.com/wovka88/hassio-addons
 webui: https://[HOST]:[PORT:8443]
