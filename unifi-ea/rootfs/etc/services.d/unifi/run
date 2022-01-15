@@ -1,0 +1,29 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: UniFi Network Application
+# Runs the UniFi Network Application
+# ==============================================================================
+declare -a options
+declare xmx
+declare xms
+
+bashio::log.info 'Now starting the UniFi Network Application...'
+bashio::log.info 'Note: No add-on specific logs beyond this point.'
+
+xmx=256
+if bashio::config.has_value 'memory_max'; then
+    xmx=$(bashio::config 'memory_max')
+fi
+
+xms=128
+if bashio::config.has_value 'memory_init'; then
+    xms=$(bashio::config 'memory_init')
+fi
+
+options+=("-Xmx${xmx}m")
+options+=("-Xms${xms}m")
+options+=(-jar /usr/lib/unifi/lib/ace.jar)
+options+=(start)
+
+# Run UniFi
+exec /usr/bin/java "${options[@]}"
