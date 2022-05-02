@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.15.3-r0
+
+- Bump deCONZ to v2.15.3
+
 ## v2.15.2-r1
 
 - Fix deCONZ/Phoscon Ingress access when using FQDN
