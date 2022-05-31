@@ -3,4 +3,4 @@ build_from:
   amd64: ghcr.io/home-assistant/amd64-base-debian:bullseye
   armhf: ghcr.io/home-assistant/armhf-base-raspbian:bullseye
 args:
-  DECONZ_VERSION: 2.15.03
+  DECONZ_VERSION: 2.16.01
