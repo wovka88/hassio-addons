@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.16.1-r3
+
+- Update to Debian Bullseye
+- Install OpenBox
+
 ## v2.16.1-r2
 
 - Revert Update to Debian Bullseye
