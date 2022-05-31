@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.16.1-r2
+
+- Revert Update to Debian Bullseye
+
 ## v2.16.1-r1
 
 - Update to Debian Bullseye
