@@ -14,6 +14,7 @@ RUN \
         iproute2 \
         iputils-ping \
         kmod \
+        libatomic1 \
         libcap2-bin \
         libqt5core5a \
         libqt5gui5 \
@@ -34,7 +35,8 @@ RUN \
         tigervnc-standalone-server \
         udev \
         wget \
-        wmii \
+        websockify \
+        gosu \
         xfonts-base \
         xfonts-scalable \
     && rm -rf /var/lib/apt/lists/* \
