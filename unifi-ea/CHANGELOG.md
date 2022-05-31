@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.2.85-r0
+
+- Bump Unifi Network 7.2.85
+
 ## 7.1.66-r0
 
 - Bump Unifi Network 7.1.66
