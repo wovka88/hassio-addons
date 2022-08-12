@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/amd64:7.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:8.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -6,7 +6,6 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
-ARG BUILD_ARCH=amd64
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
