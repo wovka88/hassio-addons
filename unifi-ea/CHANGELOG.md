@@ -1,6 +1,10 @@
 # Changelog
 
-## 7.2.92-r1
+## 7.2.93-r0
+
+- Bump Unifi Network 7.2.93
+
+## 7.2.92-r4
 - Upgrades add-on base image to 8.1.0
 
 ## 7.2.92-r0
