@@ -1,6 +1,6 @@
 ---
 name: UniFi Network Application (EA)
-version: 7.2.93-r0
+version: 7.2.93-r1
 image: ghcr.io/wovka88/{arch}-addon-unifi
 slug: unifi
 description: Manage your UniFi network using a web browser
