@@ -1,7 +1,8 @@
 # Changelog
 
-## 7.2.94-r0
+## 7.3.69-r0
 
+- Bump Unifi Network 7.3.69
 - Bump Unifi Network 7.3.67
 - Bump OpenJRE to v11
 
