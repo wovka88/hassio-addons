@@ -2,6 +2,11 @@
 
 ## 7.2.94-r0
 
+- Bump Unifi Network 7.3.67
+- Bump OpenJRE to v11
+
+## 7.2.94-r0
+
 - Bump Unifi Network 7.2.94
 
 ## 7.2.93-r0
@@ -9,6 +14,7 @@
 - Bump Unifi Network 7.2.93
 
 ## 7.2.92-r4
+
 - Upgrades add-on base image to 8.1.0
 
 ## 7.2.92-r0
