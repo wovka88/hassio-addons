@@ -13,6 +13,8 @@ fi
 rm -fr /usr/lib/unifi/data
 ln -s /data/unifi/data /usr/lib/unifi/data
 
+mkdir -p /var/log/unifi
+
 if ! bashio::fs.directory_exists '/backup/unifi'; then
     mkdir -p /backup/unifi
 fi
