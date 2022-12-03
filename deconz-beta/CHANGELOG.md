@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.19.3-r0
+
+- Bump deCONZ to v2.19.3
+
 ## v2.19.2-r0
 
 - Bump deCONZ to v2.19.2
