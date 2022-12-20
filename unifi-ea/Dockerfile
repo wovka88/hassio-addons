@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:8.1.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:8.2.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -14,20 +14,26 @@ RUN \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
         mongodb-server=1:3.6.9+really3.6.8+90~g8e540c0b6d-0ubuntu5.3 \
-        openjdk-11-jre-headless=11.0.16+8-0ubuntu1~20.04 \
+        openjdk-11-jre-headless=11.0.17+8-1ubuntu2~20.04 \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.3.76-4bee620529/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/7.3.80-97670d9d50/unifi_sysvinit_all.deb" \
     \
     && dpkg --install /tmp/unifi.deb \
     && apt-get clean \
     && rm -fr \
         /tmp/* \
-        /var/{cache,log}/* \
-        /var/lib/apt/lists/*
+        /var/cache/* \
+        /var/lib/apt/lists/* \
+        /var/log/*.log \
+        /var/log/apt
 
 # Copy root filesystem
 COPY rootfs /
+
+# Health check
+HEALTHCHECK --start-period=5m \
+    CMD curl --insecure --fail https://localhost:8443 || exit 1
 
 # Build arguments
 ARG BUILD_ARCH
