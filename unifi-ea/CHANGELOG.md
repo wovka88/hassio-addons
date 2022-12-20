@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.3.80-r0
+
+- Bump Unifi Network 7.3.80
+- Add healthcheck to improve HA watchdog
+- Upgrades add-on base image to 8.2.0
+
 ## 7.3.76-r0
 
 - Bump Unifi Network 7.3.76
