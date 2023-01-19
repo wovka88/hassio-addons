@@ -1,4 +1,4 @@
-version: v2.20.0-r0
+version: v2.20.1-r0
 slug: deconz
 name: deCONZ-beta
 description: Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik
