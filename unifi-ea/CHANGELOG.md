@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.4.140-r0
+
+- Bump Unifi Network 7.4.140
+- Upgrades add-on base image to 8.2.1
+
 ## 7.3.83-r0
 
 - Bump Unifi Network 7.3.83
