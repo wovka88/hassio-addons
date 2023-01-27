@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:8.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base:8.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -17,7 +17,7 @@ RUN \
         openjdk-11-jre-headless=11.0.17+8-1ubuntu2~20.04 \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.3.83-4501ffd244/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/7.4.140-ebecffb5f8/unifi_sysvinit_all.deb" \
     \
     && dpkg --install /tmp/unifi.deb \
     && apt-get clean \
