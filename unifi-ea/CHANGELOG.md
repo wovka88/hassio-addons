@@ -3,6 +3,7 @@
 ## 7.4.145-r0
 
 - Bump Unifi Network 7.4.145
+- Update openjdk-11-jre-headless to 11.0.18+10-0ubuntu1~20.04.1
 
 ## 7.4.144-r0
 
