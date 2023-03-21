@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.4.146-r0
+
+- Bump Unifi Network 7.4.146
+
 ## 7.4.145-r0
 
 - Bump Unifi Network 7.4.145
