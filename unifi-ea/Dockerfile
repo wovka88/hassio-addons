@@ -17,7 +17,7 @@ RUN \
         openjdk-11-jre-headless=11.0.18+10-0ubuntu1~20.04.1 \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.4.150-638f548cee/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/7.4.154-14038469fd/unifi_sysvinit_all.deb" \
     \
     && dpkg --install /tmp/unifi.deb \
     && apt-get clean \
