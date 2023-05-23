@@ -3,6 +3,7 @@
 ## 7.4.156-r0
 
 - Bump Unifi Network 7.4.156
+- Dump OpenJDK Java runtime to 11.0.19+7
 
 ## 7.4.155-r0
 
