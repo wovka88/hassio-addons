@@ -1,8 +1,9 @@
 # Changelog
 
-## v2.22.2-r0
+## v2.22.2-r1
 
 - Bump deCONZ to v2.22.2
+- Rebuild Container
 
 ## v2.22.1-r0
 
