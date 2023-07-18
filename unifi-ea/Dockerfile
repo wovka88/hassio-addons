@@ -20,7 +20,7 @@ RUN \
     && curl -J -L -o /tmp/unifi.deb \
         "https://dl.ui.com/unifi/7.5.165-9316de8cde/unifi_sysvinit_all.deb" \
     \
-    && dpkg --install /tmp/unifi.deb \
+    && dpkg --force-all --install /tmp/unifi.deb \
     && apt-get clean \
     && rm -fr \
         /tmp/* \
