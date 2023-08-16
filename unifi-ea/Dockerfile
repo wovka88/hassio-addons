@@ -7,18 +7,21 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
 RUN \
-    apt-get update \
+    echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/3.6 main" \
+        > /etc/apt/sources.list.d/mongodb-org.list \
+    && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5 \
+    && apt-get update \
     && apt-get install -y --no-install-recommends \
         binutils=2.34-6ubuntu1.6 \
         jsvc=1.0.15-8 \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
-        mongodb-server-core \
+        mongodb-org-server \
         openjdk-17-jre-headless=17.0.7+7~us1-0ubuntu1~20.04 \
         ca-certificates-java \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.5.165-9316de8cde/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/7.5.171-8c80ec945b/unifi_sysvinit_all.deb" \
     \
     && dpkg --force-all --install /tmp/unifi.deb \
     && apt-get clean \
