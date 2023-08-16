@@ -13,12 +13,12 @@ RUN \
         jsvc=1.0.15-8 \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
-        mongodb-server-core \
-        openjdk-17-jre-headless=17.0.7+7~us1-0ubuntu1~20.04 \
+        mongodb-server \
+        openjdk-17-jre-headless \
         ca-certificates-java \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.5.165-9316de8cde/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/7.5.171-8c80ec945b/unifi_sysvinit_all.deb" \
     \
     && dpkg --force-all --install /tmp/unifi.deb \
     && apt-get clean \
@@ -33,7 +33,7 @@ RUN \
 COPY rootfs /
 
 # Health check
-HEALTHCHECK --start-period=5m \
+HEALTHCHECK --start-period=30m \
     CMD curl --insecure --fail https://localhost:8443 || exit 1
 
 # Build arguments

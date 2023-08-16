@@ -22,6 +22,8 @@ fi
 
 options+=("-Xmx${xmx}m")
 options+=("-Xms${xms}m")
+options+=(-Dunifi.datadir=/usr/lib/unifi/data -Dunifi.logdir=/usr/lib/unifi/log -Dunifi.rundir=/usr/lib/unifi/log)
+options+=(-Djava.awt.headless=true -Dfile.encoding=UTF-8 --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/sun.security.util=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.rmi/sun.rmi.transport=ALL-UNNAMED)
 options+=(-jar /usr/lib/unifi/lib/ace.jar)
 options+=(start)
 
