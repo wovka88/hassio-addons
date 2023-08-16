@@ -21,7 +21,7 @@ RUN \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
         mongodb-org-server \
-        openjdk-17-jre-headless=17.0.7+7~us1-0ubuntu1~20.04 \
+        openjdk-17-jre-headless \
         ca-certificates-java \
     \
     && curl -J -L -o /tmp/unifi.deb \
