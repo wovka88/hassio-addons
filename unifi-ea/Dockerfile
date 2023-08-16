@@ -9,18 +9,11 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        dirmngr \
-        gnupg2 \
-    && echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse main" \
-        > /etc/apt/sources.list.d/mongodb-org.list \
-    && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5 \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends \
         binutils=2.34-6ubuntu1.6 \
         jsvc=1.0.15-8 \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
-        mongodb-org-server \
+        mongodb-server \
         openjdk-17-jre-headless \
         ca-certificates-java \
     \
@@ -40,7 +33,7 @@ RUN \
 COPY rootfs /
 
 # Health check
-HEALTHCHECK --start-period=5m \
+HEALTHCHECK --start-period=30m \
     CMD curl --insecure --fail https://localhost:8443 || exit 1
 
 # Build arguments
