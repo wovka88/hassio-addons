@@ -1,8 +1,13 @@
 # Changelog
 
+## 7.5.172-r0
+
+- Bump Unifi Network 7.5.172
+
 ## 7.5.171-r0
 
 - Bump Unifi Network 7.5.171
+- Changed Start-Script
 
 ## 7.5.165-r0
 
