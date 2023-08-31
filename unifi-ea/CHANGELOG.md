@@ -1,6 +1,6 @@
 # Changelog
 
-## 7.5.172-r0
+## 7.5.174-r0
 
 - Bump Unifi Network 7.5.174
 - Bump MongoDB to 4.4
