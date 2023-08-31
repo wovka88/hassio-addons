@@ -18,7 +18,7 @@ RUN \
         jsvc=1.0.15-8 \
         libcap2=1:2.32-1 \
         logrotate=3.14.0-4ubuntu3 \
-        mongodb-org \
+        mongodb-org-mongos=4.4.18 mongodb-org-tools=4.4.18 mongodb-org-shell=4.4.18 mongodb-org-database-tools-extra=4.4.18 mongodb-org=4.4.18 mongodb-org-server=4.4.18 \
         openjdk-17-jre-headless \
         ca-certificates-java \
     \
