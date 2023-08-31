@@ -2,6 +2,11 @@
 
 ## 7.5.172-r0
 
+- Bump Unifi Network 7.5.174
+- Bump MongoDB to 4.4
+
+## 7.5.172-r0
+
 - Bump Unifi Network 7.5.172
 
 ## 7.5.171-r0
