@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.5.176-r0
+
+- Bump Unifi Network 7.5.176
+
 ## 7.5.174-r1
 
 - Downgrade MongoDB to 4.4.18
