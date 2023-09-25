@@ -37,6 +37,7 @@ RUN \
         wget \
         websockify \
         openbox \
+        tint2 \
         xfonts-base \
         xfonts-scalable \
     && rm -rf /var/lib/apt/lists/* \
