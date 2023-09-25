@@ -25,9 +25,9 @@ RUN \
         libqt5widgets5 \
         libqt5qml5 \
         qtdeclarative5-dev \
-        libssl1.1 \
+        libssl3 \
         lsof \
-        netcat \
+        netcat-openbsd \
         nginx \
         novnc \
         sqlite3 \
@@ -37,6 +37,7 @@ RUN \
         wget \
         websockify \
         openbox \
+        tint2 \
         xfonts-base \
         xfonts-scalable \
     && rm -rf /var/lib/apt/lists/* \

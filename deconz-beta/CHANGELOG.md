@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.24.0-r1
+
+- Upgrade to Debian Bookworm
+- Change Ingress to login.html
+- Add lint2 for openbox
+
 ## v2.24.0-r0
 
 - Bump deCONZ to v2.24.0
