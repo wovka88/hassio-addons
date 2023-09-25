@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.24.0-r2
+
+- Changed OTA Script to deCONZ-ikea-ota-download.sh
+
 ## v2.24.0-r1
 
 - Upgrade to Debian Bookworm
