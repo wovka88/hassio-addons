@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.5.187-r0
+
+- Bump Unifi Network 7.5.187
+
 ## 7.5.185-r0
 
 - Bump Unifi Network 7.5.185
