@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.24.1-r0
+
+- Bump deCONZ to v2.24.1
+
 ## v2.24.0-r2
 
 - Changed OTA Script to deCONZ-ikea-ota-download.sh
