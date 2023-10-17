@@ -85,3 +85,7 @@ RUN \
     && sed -i 's/\/root/\/data/' /etc/passwd
 
 COPY rootfs /
+
+# Health check
+HEALTHCHECK --start-period=5m \
+    CMD curl --insecure --fail 127.0.0.1:40850 || exit 1
