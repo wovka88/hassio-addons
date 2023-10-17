@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.24.1-r1
+
+- Add Healthcheck
+
 ## v2.24.1-r0
 
 - Bump deCONZ to v2.24.1
