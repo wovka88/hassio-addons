@@ -18,7 +18,7 @@ RUN \
         ca-certificates-java \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/7.5.187-f57f5bf7ab/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/8.0.2-fdee17d54f/unifi_sysvinit_all.deb" \
     \
     && dpkg --force-all --install /tmp/unifi.deb \
     && apt-get clean \
@@ -33,7 +33,7 @@ RUN \
 COPY rootfs /
 
 # Health check
-HEALTHCHECK --start-period=30m \
+HEALTHCHECK --start-period=5m \
     CMD curl --insecure --fail https://localhost:8443 || exit 1
 
 # Build arguments
