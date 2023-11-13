@@ -18,7 +18,7 @@ RUN \
         ca-certificates-java \
     \
     && curl -J -L -o /tmp/unifi.deb \
-        "https://dl.ui.com/unifi/8.0.2-fdee17d54f/unifi_sysvinit_all.deb" \
+        "https://dl.ui.com/unifi/8.0.7-7a3d06144a/unifi_sysvinit_all.deb" \
     \
     && dpkg --force-all --install /tmp/unifi.deb \
     && apt-get clean \
