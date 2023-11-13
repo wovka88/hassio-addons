@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.0.7-r0
+
+- Bump Unifi Network 8.0.7
+
 ## 8.0.2-r0
 
 - Bump Unifi Network 8.0.2
