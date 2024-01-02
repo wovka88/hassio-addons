@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.25.1-r0
+
+- Bump deCONZ to v2.25.1
+- Delete OTAU DeCONZ
+
 ## v2.25.0-r0
 
 - Bump deCONZ to v2.25.0
