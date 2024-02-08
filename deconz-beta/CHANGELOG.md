@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.25.3-r0
+
+- Bump deCONZ to v2.25.3
+- Change Ingress to index.html
+
 ## v2.25.2-r0
 
 - Bump deCONZ to v2.25.2
