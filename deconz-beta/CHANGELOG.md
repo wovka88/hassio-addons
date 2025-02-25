@@ -3,6 +3,7 @@
 ## v2.29.2-r0
 
 - Bump deCONZ to v2.29.2
+- Removing WiringPi (not required anymore)
 
 ## v2.29.1-r0
 
